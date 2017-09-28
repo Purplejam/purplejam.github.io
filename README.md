@@ -15,7 +15,7 @@
 
 [Урок6](https://purplejam.github.io/lesson_6/ "ДЗ6") - Позиционирование при помощи CSS.
 
-[Урок7](https://purplejam.github.io/lesson_7/ "ДЗ7") - Верстка первого макета.
+[Урок7](https://purplejam.github.io/lesson_7/site/dist/ "ДЗ7") - Верстка первого макета.
 
 [Урок8](https://purplejam.github.io/lesson_8/ "ДЗ8") - Знакомтсво с Bootstrap.
 
