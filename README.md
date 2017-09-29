@@ -25,7 +25,7 @@
 
 [Урок11](https://purplejam.github.io/lesson_11/ "ДЗ11") - Sublime Text и сниппеты.
 
-[Урок12](https://purplejam.github.io/lesson_12/ "ДЗ12") - Хостинг от Gisthub.
+[Урок12](https://purplejam.github.io/ "ДЗ12") - Хостинг от Gisthub.
 
 
 
