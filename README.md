@@ -27,6 +27,8 @@
 
 [Урок12](https://purplejam.github.io/ "ДЗ12") - Хостинг от Gisthub.
 
+[Урок13](https://purplejam.github.io/lesson_13/ "ДЗ13") - Верстка пиксель-перфект (ну почти).
+
 
 
 
