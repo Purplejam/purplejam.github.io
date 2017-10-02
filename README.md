@@ -31,6 +31,10 @@
 
 [Урок14](https://purplejam.github.io/lessons_14/ "ДЗ14") - Практическая работа - верстка шапки сайта. 
 
+[Урок15](https://purplejam.github.io/lessons_15/ "ДЗ14") - Подключение шрифтов
+
+[Урок16](https://purplejam.github.io/lessons_16/ "ДЗ14") - Практическая работа - верстка первого экрана. 
+
 
 
 
