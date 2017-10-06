@@ -306,6 +306,7 @@ main {
 	height: 100%;
 	z-index: 999;
 	background-color: rgba(0, 0, 0, 0.5);
+	overflow-y: auto;
 }
 .popup-content {
 	position: fixed;
@@ -390,26 +391,11 @@ main {
 
 @media (max-width: 767px) {
 	.popup-content {
-		height: 450px;
+		position: relative;
+		height: 430px;
 		width: 60%;
 		padding: 2.5rem;
-		overflow: auto;
-		top: 1%;
-		& .popup-close {
-			display: block;
-			padding-right: 2rem;
-			position: absolute;
-			top: 0.5rem;
-			right: 0.5rem;
-			width: 2rem;
-			text-align: center;
-			border: none;
-			font-size: 2rem;
-			background-color: transparent;
-			color: @lighttext;
-			z-index: 9999;
-			opacity: 0.7;
-		}
+		top: 25px;
 		& label {
 			font-size: 1rem;
 		}
@@ -533,8 +519,23 @@ main {
 @media (max-width: 400px) {
 	.popup-content {
 		padding: 1.8rem;
-		height: 430px;
+		height: 410px;
 		width: 80%;
+				& .popup-close {
+			display: block;
+			padding-right: 2rem;
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			width: 2rem;
+			text-align: center;
+			border: none;
+			font-size: 2rem;
+			background-color: transparent;
+			color: @lighttext;
+			z-index: 9999;
+			opacity: 0.7;
+		}
 		& p {
 			font-size: 1rem;
 		}
