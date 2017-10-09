@@ -313,6 +313,9 @@ main {
   display: block;
   margin-bottom: 2rem;
 }
+.my-accordion-panel {
+  display: none;
+}
 /*MODAL*/
 .popup {
   display: none;
@@ -402,6 +405,9 @@ main {
   display: block;
   hpadding: 2rem 3.5rem;
   font-size: 1.6rem;
+}
+.price-button-responsive {
+  display: none;
 }
 /*RESPONSIVE*/
 @media (max-width: 767px) {
@@ -516,8 +522,52 @@ main {
   .price-block button {
     margin-top: 1.5rem;
   }
+  .my-accordion-panel {
+    display: block;
+  }
+  .my-accordion-panel a {
+    color: #006b00;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #006b00;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  .price-button {
+    display: none;
+  }
+  .price-button-responsive {
+    display: block;
+  }
+  .price-button-responsive .price-header-btn {
+    width: 95%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
+  .my-accordion-panel {
+    display: block;
+  }
+  .my-accordion-panel a {
+    color: #006b00;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #006b00;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  .price-button {
+    display: none;
+  }
+  .price-button-responsive {
+    display: block;
+  }
+  .price-button-responsive .price-header-btn {
+    width: 95%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .main-header {
     text-align: center;
   }

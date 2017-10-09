@@ -360,6 +360,10 @@ main {
 }
 }
 
+.my-accordion-panel {
+	display: none;
+}
+
 /*MODAL*/
 
 .popup {
@@ -448,6 +452,10 @@ main {
 			hpadding: 2rem 3.5rem;
 			font-size: 1.6rem;
 		}
+	}
+
+	.price-button-responsive {
+		display: none;
 	}
 
 
@@ -572,9 +580,59 @@ main {
 				.price-block button {
 			margin-top: 1.5rem;
 		}
+
+		.my-accordion-panel {
+			display: block;
+			
+			a {
+				color: #006b00;
+				font-size: 1.8rem;
+				border-bottom: 1px solid #006b00;
+				padding-bottom: 1rem;
+				margin-bottom: 1.5rem;
+				display: inline-block;
+			}
+	}
+
+	.price-button {
+		display: none;
+		&-responsive {
+			display: block;
+			& .price-header-btn {
+				width: 95%;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
+
+	.my-accordion-panel {
+			display: block;
+			
+			a {
+				color: #006b00;
+				font-size: 1.8rem;
+				border-bottom: 1px solid #006b00;
+				padding-bottom: 1rem;
+				margin-bottom: 1.5rem;
+				display: inline-block;
+			}
+	}
+
+	.price-button {
+		display: none;
+		&-responsive {
+			display: block;
+			& .price-header-btn {
+				width: 95%;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+		}
+	}
 
 	.main-header{
  	text-align: center;
@@ -618,7 +676,7 @@ main {
 	.section-header-white {
 		margin-bottom: 0;
 	}
-		.price-block.price-list {
+		.price-block .price-list {
 			min-height: 6rem;
 		}
 		.price-block button {
