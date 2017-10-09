@@ -55,6 +55,10 @@
 			.question span {
 				color: #6f6d6d;
 				font-size: 1.2rem;
+				
+				label {
+					cursor: pointer;
+				}
 			}
 			.checkbox {
 				display: inline-block;
@@ -119,12 +123,14 @@
 					bottom: 0;
 					right: 0;
 					transform: translateY(100%);
+					z-index: 0;
 				}
 			}
 		}
 		.panel {
 			background-color: #03a5da;
 			padding: 1rem;
+			z-index: 4;
 		}
 	}
 
@@ -167,10 +173,12 @@
 	.tab-panels .panel {
 		display: none;
 		border: 1px solid #047ca0;
+		z-index: 5;
 	}
 
 	.tab-panels .panel.active {
 		display: block;
+		z-index: 5;
 	}
 
 

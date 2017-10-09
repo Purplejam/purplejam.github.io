@@ -51,6 +51,9 @@ body {
   color: #6f6d6d;
   font-size: 1.2rem;
 }
+.tab-panels form .question span label {
+  cursor: pointer;
+}
 .tab-panels form .checkbox {
   display: inline-block;
   width: 2.5rem;
@@ -115,10 +118,12 @@ body {
   bottom: 0;
   right: 0;
   transform: translateY(100%);
+  z-index: 0;
 }
 .tab-panels .panel {
   background-color: #03a5da;
   padding: 1rem;
+  z-index: 4;
 }
 .tabs li {
   display: inline-block;
@@ -156,7 +161,9 @@ input[type=checkbox] {
 .tab-panels .panel {
   display: none;
   border: 1px solid #047ca0;
+  z-index: 5;
 }
 .tab-panels .panel.active {
   display: block;
+  z-index: 5;
 }
