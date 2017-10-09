@@ -45,7 +45,11 @@
 
 [Урок21](https://purplejam.github.io/lesson_21/ "ДЗ14") - Всплывающие окна. 
 
-[Урок22](https://purplejam.github.io/lesson_22/ "ДЗ14") - Практическая работа - верстка всплывающего окна, адаптив окна. 
+[Урок22](https://purplejam.github.io/lesson_22/ "ДЗ14") - Практическая работа - верстка всплывающего окна, адаптив окна.
+
+[Урок23](https://purplejam.github.io/lesson_23/ "ДЗ14") - Аккордеон. 
+
+[Урок23_2](https://purplejam.github.io/lesson_23_2/ "ДЗ14") - Табы.
 
 
 
