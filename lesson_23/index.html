@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Accordion JQ Test</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="section homework">
+        <div class="row">
+            <h2>Ответы на вопросы<span>которые нам чаще всего задают</span></h2>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="my-accordion">
+                    <div class="my-accordion-box">
+                        <div class="my-accordion-panel my-accordion-panel-first"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+                        <div class="my-accordion-content">Быстрая уборка 3-x комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</div>
+                    </div>
+                    <div class="my-accordion-box">
+                        <div class="my-accordion-panel"><a href="#">Сколько времени может занять быстрая уборка 2-х комнатной квартиры?</a></div>
+                        <div class="my-accordion-content">Быстрая уборка 2-x комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 2 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</div>
+                    </div>
+                    <div class="my-accordion-box">
+                        <div class="my-accordion-panel"><a href="#">Сколько времени может занять быстрая уборка 1 комнатной квартиры?</a></div>
+                        <div class="my-accordion-content">Быстрая уборка 1 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 1 часа. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</div>
+                    </div>
+                    <div class="my-accordion-box">
+                        <div class="my-accordion-panel"><a href="#">Сколько времени может занять быстрая уборка частного дома?</a></div>
+                        <div class="my-accordion-content">Быстрая уборка частного дома, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 6 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+    function openFirstPanel(){
+    $('.my-accordion > .my-accordion-box:first-child > .my-accordion-panel').next().addClass('active').slideDown();
+        }
+
+    var allPanels = $('.my-accordion > .my-accordion-box > .my-accordion-content');
+
+    allPanels.hide();
+
+    openFirstPanel();
+
+    $('.my-accordion > .my-accordion-box > .my-accordion-panel > a').click(function(event) {
+        event.preventDefault();
+        $this = $(this);
+        $target = $this.parent().next();
+
+    if($target.hasClass('active')) {
+        $target.removeClass('active').slideUp(400, 'linear');
+    } else {
+        allPanels.removeClass('active').slideUp(400, 'linear');
+        $target.addClass('active').slideDown(400, 'linear');
+    }
+    return false;
+  }); // end click
+
+}); // end ready
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/*Fonts*/
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*Base settings*/
+button,
+a,
+li {
+  outline: none;
+  border: none;
+}
+button:active,
+a:active,
+li:active {
+  outline: none;
+  border: none;
+}
+body {
+  font-size: 10px;
+  font-family: "MyriadProRegular";
+}
+* {
+  font-family: "MyriadProRegular", sans-serif;
+}
+/*Main content*/
+.section {
+  background: url(../img/mainbg.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  height: 100vh;
+}
+.my-form {
+  display: block;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.tab-panels {
+  margin-top: 2rem;
+}
+.tab-panels form {
+  border: 1px solid #7dd7f4;
+  position: relative;
+  background-color: #000;
+  padding: 5rem 2.2rem 0.5rem 2.2rem;
+}
+.tab-panels form .question span {
+  color: #6f6d6d;
+  font-size: 1.2rem;
+}
+.tab-panels form .checkbox {
+  display: inline-block;
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+.tab-panels form label {
+  color: #6f6d6d;
+}
+.tab-panels form span {
+  display: inline-block;
+}
+.tab-panels form .checkbox {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.tab-panels form a {
+  color: #c51f03;
+  font-size: 1.1rem;
+  display: block;
+  text-align: left;
+  margin-bottom: 3.2rem;
+  margin-left: 1rem;
+}
+.tab-panels form input {
+  display: inline-block;
+  border: none;
+  width: 100%;
+  background-color: #1b1a1a;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.1rem 1.1rem;
+  margin-bottom: 1.8rem;
+  outline: none;
+}
+.tab-panels form input::-webkit-input-placeholder {
+  color: white;
+}
+.tab-panels form .enter-button {
+  display: block;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.5rem;
+  background: url('../img/buttonbg.jpg') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -2.4rem;
+  bottom: 1.6rem;
+  outline: none;
+}
+.tab-panels form .enter-button:after {
+  content: '';
+  background: url('../img/flaps_left.png') no-repeat;
+  height: 11px;
+  width: 13px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+}
+.tab-panels .panel {
+  background-color: #03a5da;
+  padding: 1rem;
+}
+.tabs li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.6rem;
+  margin: 0;
+  color: #080808;
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  top: 1px;
+  border-bottom: 1px solid #047ca0;
+  border-top: 1px solid black;
+}
+.tabs li:first-child {
+  margin-left: 1.4rem;
+  margin-right: 0.4rem;
+}
+.tabs li.active {
+  background-color: #03a5da;
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #047ca0;
+  border-bottom: 1px solid #03a5da;
+}
+.tabs {
+  margin: 0;
+  padding: 0;
+}
+input[type=checkbox] {
+  margin: 0;
+}
+.tab-panels .panel {
+  display: none;
+  border: 1px solid #047ca0;
+}
+.tab-panels .panel.active {
+  display: block;
+}
