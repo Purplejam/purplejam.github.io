@@ -556,7 +556,7 @@ main {
   .section-header-white {
     margin-bottom: 0;
   }
-  .price-block.price-list {
+  .price-block .price-list {
     min-height: 6rem;
   }
   .price-block button {
