@@ -136,14 +136,14 @@
                 </div>
             </div>
 
-            <div class="row my-accordion">
+            <div class="row my-accordion" id="my-accordion">
                 <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                     <div class="price-block my-accordion-box my-accordion-box-first">
                         <h4>Штукатурка вашим материалом</h4>
                         <img src="img/price-item1.jpg" alt="">
                         <span class="price-tag">от 300 руб/<sup>2</sup></span>
                         <div class="my-accordion-panel my-accordion-panel-first"><a href="#">Что входит в стоимость?</a></div>
-                        <ul class="price-list my-accordion-content">
+                        <ul class="price-list my-accordion-content hidden-item">
                             <li>Проведение работ</li>
                             <li>Уборка</li>
                         </ul>
@@ -156,7 +156,7 @@
                         <img src="img/price-item2.jpg" alt="">
                         <span class="price-tag">от 530 руб/<sup>2</sup></span>
                         <div class="my-accordion-panel"><a href="#">Что входит в стоимость?</a></div>
-                        <ul class="price-list my-accordion-content">
+                        <ul class="price-list my-accordion-content hidden-item">
                             <li>Завоз материала и его подёь</li>
                             <li>Проведение работ</li>
                             <li>Уборка</li>
@@ -171,7 +171,7 @@
                         <img src="img/price-item3.jpg" alt="">
                         <span class="price-tag">от 560 руб/м<sup>2</sup></span>
                         <div class="my-accordion-panel"><a href="#">Что входит в стоимость?</a></div>
-                        <ul class="price-list my-accordion-content">
+                        <ul class="price-list my-accordion-content hidden-item">
                             <li>Завоз материала и его подём</li>
                             <li>Проведение работ</li>
                             <li>Уборка</li>
@@ -284,25 +284,19 @@
 
 //accordion
 
-if ($(window).width() < 960) {
-    var allPanels = $('.my-accordion .my-accordion-box .my-accordion-content');
-
-    allPanels.hide();
-
-    $('.my-accordion .my-accordion-box .my-accordion-panel a').click(function(event) {
+  $('.my-accordion .my-accordion-box .my-accordion-panel a').click(function(event) {
         event.preventDefault();
 
     $this = $(this);
     $target = $this.parent().next();
 
-    if($target.hasClass('active')) {
-        $target.removeClass('active').slideUp(300, 'linear');
+    if($target.hasClass('hidden-item')) {
+        $target.removeClass('hidden-item').slideDown(400);
     } else {
-        $target.addClass('active').slideDown(400, 'linear');
+        $target.addClass('hidden-item').slideUp(400);
     }
     return false;
   }); // end click
-}
 });
     </script>
     <script src="js/bootstrap.min.js"></script>

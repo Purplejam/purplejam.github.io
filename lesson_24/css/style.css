@@ -411,6 +411,9 @@ main {
 }
 /*RESPONSIVE*/
 @media (max-width: 767px) {
+  .hidden-item {
+    display: none;
+  }
   .popup-content {
     position: relative;
     height: 430px;
@@ -513,6 +516,9 @@ main {
   .price-block {
     margin-top: 2rem;
   }
+  .price-block .button {
+    width: 55%;
+  }
   .section-header-white {
     margin-bottom: 0;
   }
@@ -543,6 +549,7 @@ main {
     width: 95%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
@@ -567,6 +574,10 @@ main {
     width: 95%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .hidden-item {
+    display: none;
   }
   .main-header {
     text-align: center;
@@ -602,6 +613,9 @@ main {
   }
   .price-block {
     margin-top: 2rem;
+  }
+  .price .button {
+    width: 55%;
   }
   .section-header-white {
     margin-bottom: 0;
