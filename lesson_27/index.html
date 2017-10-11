@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Video</title>
+	<link rel="stylesheet" href="custom.css">
+</head>
+<body>
+ <div class="section" id="section">
+ 	<div class="wraper">
+ 		<h2>Домашняя работа <span>Видеофон на сайте</span></h2>
+ 	</div>
+ </div>
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="jquery.vide.min.js"></script>
+	<script>
+$('#section').vide('video/lonely-blue.webm', {
+		volume: 1,
+  playbackRate: 1,
+  muted: true,
+  loop: true,
+  autoplay: true,
+  position: '50% 50%', // Similar to the CSS `background-position` property.
+  posterType: 'detect', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
+  resizing: true, // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
+  bgColor: 'transparent', // Allow custom background-color for Vide div,
+  className: '' // Add custom CSS class to Vide div
+});
+	</script>
+
+
+	
+</body>
+</html>
