@@ -59,6 +59,8 @@
 
 [Урок27](https://purplejam.github.io/lesson_27/ "ДЗ14") - Видеофон для сайта.
 
+[Урок28](https://purplejam.github.io/lesson_28/ "ДЗ14") - Практическая работа - блок с отзывами концовка. 
+
 
 
 
