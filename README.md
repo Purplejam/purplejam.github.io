@@ -61,6 +61,8 @@
 
 [Урок28](https://purplejam.github.io/lesson_28/ "ДЗ14") - Практическая работа - блок с отзывами концовка. 
 
+[Урок29](https://purplejam.github.io/lesson_29/ "ДЗ14") - Parallax + rellax. 
+
 
 
 
