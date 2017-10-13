@@ -82,7 +82,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
     			
-				<div class="item item-1 active parallax-window" data-parallax="scroll" data-image-src="assets/images/hero-1.jpg" id="slide1">
+				<div class="item item-1 active" id="slide1" data-stellar-background-ratio=".4" style="background-position: 50% 0px;">
 					<div class="item-content container">
     					<div class="item-content-inner">
     				        
@@ -94,7 +94,7 @@
 					</div><!--//item-content-->
 				</div><!--//item-->
 				
-				<div class="item item-2 parallax-window" data-parallax="scroll" id="slide2">
+				<div class="item item-2" id="slide2" data-stellar-background-ratio=".4" style="background-position: 50% 0px;">
 					<div class="item-content container">
 						<div class="item-content-inner">
     				        
@@ -106,7 +106,7 @@
 					</div>
 				</div><!--//item-->
 				
-				<div class="item item-3 parallax-window" data-parallax="scroll" id="slide3">
+				<div class="item item-3" id="slide3" data-stellar-background-ratio=".4" style="background-position: 50% 0px;">
 					<div class="item-content container">
 						<div class="item-content-inner">
     				        
@@ -433,8 +433,23 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>     
     <script type="text/javascript" src="assets/js/main.js"></script>    
-    <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+    <!--<script type="text/javascript" src="assets/js/parallax.min.js"></script>-->
+    <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/rellax.min.js"></script>
+    <script>
+
+       $(function() {
+        
+         // Parallax background
+         // http://markdalgleish.com/projects/stellar.js/docs/
+         $.stellar({
+           responsive: false,
+           horizontalScrolling: false, // обязательно, чтобы не было горизонтального сдвига
+         });
+        
+       });
+    
+    </script>
     <script>
     var rellax = new Rellax('.rellax');
     </script>
