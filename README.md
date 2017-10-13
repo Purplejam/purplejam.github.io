@@ -63,6 +63,8 @@
 
 [Урок29](https://purplejam.github.io/lesson_29/ "ДЗ14") - Parallax + rellax. 
 
+[Урок30](https://purplejam.github.io/lesson_30/ "ДЗ14") - Практика. Верстка двух блоков с схемой и все ключено.  
+
 
 
 
