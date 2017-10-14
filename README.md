@@ -65,6 +65,10 @@
 
 [Урок30](https://purplejam.github.io/lesson_30/ "ДЗ14") - Практика. Верстка двух блоков с схемой и все ключено.  
 
+[Урок31](https://purplejam.github.io/lesson_31/ "ДЗ14") - Подключение карты Yandex.
+
+[Урок32](https://purplejam.github.io/lesson_32/ "ДЗ14") - Практика. Верстка блока с опасениями.
+
 
 
 
