@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.main {
+  height: 500px;
+}
+.main .container {
+  position: relative;
+}
+.main .contacts {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 500px;
+  z-index: 9999;
+  background-color: #c60b0b;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+.main .contacts h2 {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-size: 30px;
+}
+.main .contacts p {
+  display: block;
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+.main .contacts p:nth-of-type(4) {
+  text-decoration: underline;
+}
+.footer .logo {
+  text-align: center;
+}
+.footer .logo img {
+  display: inline-block;
+}
+.footer .tdb {
+  text-align: left;
+  font-size: 16px;
+}
+.footer .allrussia {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+.footer .phone {
+  text-align: right;
+}
+.footer .phone h4 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+}
+.footer .phone p {
+  font-size: 14px;
+}
+.footer .wraper {
+  display: table;
+  width: 100%;
+  height: 95px;
+}
+.footer .wraper .wraper-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .main .container .contacts {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    height: 100px;
+  }
+  .main .container .contacts h2 {
+    display: none;
+  }
+  .main .container .contacts p {
+    font-size: 12px;
+    margin: 0 0 15px 0;
+  }
+  .main .container .contacts p:nth-of-type(2) {
+    display: none;
+  }
+  .main .container .contacts p:nth-of-type(4) {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .footer .phone {
+    text-align: center;
+  }
+}
